@@ -7,11 +7,13 @@ interface Blog {
 const BlogPost: React.FC<Blog> = (props) => {
   return (
     <div className="w-full my-10 shadow flex flex-col gap-5">
-      <img className="w-full h-auto rounded-t-lg" src={props.img} />
-      <h1 className="w-full font-bold text-left text-xl">{props.title}</h1>
-      <p className="w-full text-center">{props.text}</p>
+      <img className="w-full h-auto rounded-lg" src={props.img} />
+      <h1 className="w-full font-bold text-left text-xl sm:text-center pl-1">
+        {props.title}
+      </h1>
+      <p className="w-full text-left sm:text-center pl-1">{props.text}</p>
 
-      <a className="w-full text-left text-xl underline text-cyan-600">
+      <a className="w-full text-left sm:text-center text-xl underline text-cyan-600 pl-1">
         READ MORE
       </a>
     </div>
