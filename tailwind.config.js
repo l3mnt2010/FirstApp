@@ -9,6 +9,7 @@ export default {
         BG_Menu: "#6C6C72",
         white: "#fff",
         blue: "#0096FF",
+        BG_Wel: "#000080",
       },
     },
   },

@@ -26,8 +26,8 @@ const Menus = () => {
   };
 
   return (
-    <div className="sticky w-5/6 mx-auto top-5 block rounded-lg z-50">
-      <div className="hidden sm:flex sm:w-full sm:mx-auto sm:px-5 bg-BG_Menu">
+    <div className="sticky w-5/6 sm:w-full mx-auto top-5 block rounded-lg z-50">
+      <div className="hidden sm:flex sm:w-full sm:mx-auto sm:px-5 bg-black bg-opacity-40">
         <div className="w-5/6 flex gap-5">
           <div className="flex gap-3">
             <img className="h-5" src={mail_fill} />
@@ -50,15 +50,22 @@ const Menus = () => {
           src={menu}
           alt="this is menu icon"
           className="w-9 pl-2 py-1"
-          onClick={() => setNative(true)}
+          onClick={() => setNative(!native)}
         />
-        <h1 className="hidden sm:block sm:font-bold hover:underline">About</h1>
+        <h1
+          className="hidden sm:block sm:font-bold hover:underline"
+          onClick={() => {
+            navigate("/wellcome");
+          }}
+        >
+          About
+        </h1>
         <h1 className="hidden sm:block sm:font-bold hover:underline">
           Features
         </h1>
         {!native && (
           <Menu
-            onClose={() => setNative(false)}
+            onClose={() => setNative(true)}
             onBold={isBolds}
             notBold={notBolds}
           />

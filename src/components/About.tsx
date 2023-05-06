@@ -4,14 +4,9 @@ interface Abouts {
   text: string;
 }
 
-const style = { display: "grid", gridTemplateColumns: "20% 80%" };
-
 const About: React.FC<Abouts> = (props) => {
   return (
-    <div
-      style={style}
-      className="sm:w-96 sm:mx-auto px-5 rounded-lg my-10 w-full border-2 border-cyan-50 shadow-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 mr-3"
-    >
+    <div className="md:w-full sm:mx-auto px-5 rounded-lg my-10 w-full border-2 border-cyan-50 shadow-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 mr-3">
       <div className="w-full">
         <img className=" shadow-sm" src={img} />
       </div>

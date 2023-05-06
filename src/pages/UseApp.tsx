@@ -5,7 +5,7 @@ import videofill from "../assets/images/video-fill.png";
 const UseApp = () => {
   return (
     <div className="relative top-20 w-full bg-BG_Basic py-10 h-1/2 sm:h-96 sm:shadow-sm sm:w-full mx-auto mb-10">
-      <h1 className="w-full text-center font-bold text-2xl text-white">
+      <h1 className="w-full text-center font-bold text-xl sm:text-3xl text-white">
         How to use the app perfectly
       </h1>
       <p className="w-full text-center p-5 sm:mt-5 text-white">

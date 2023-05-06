@@ -40,7 +40,7 @@ const blog = [
   },
 ];
 
-const blog_recent = [
+export const blog_recent = [
   {
     title:
       "Irina Rozovsky captures Brooklyn’s Prospect Park in a romantic light",
